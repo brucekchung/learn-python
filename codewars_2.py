@@ -19,4 +19,24 @@ def multiply_all(input):
 
 
 print('solution: ', persistence(999))
-# print('total: ', multiply_all(28))
+
+
+#codewars solutions:
+
+import operator
+def persistence_1(n):
+    i = 0
+    while n>=10:
+        n=reduce(operator.mul,[int(x) for x in str(n)],1)
+        i+=1
+    return i
+
+def persistence_2(n):
+    nums = [int(x) for x in str(n)]
+    sist = 0
+    while len(nums) > 1:
+        newNum = reduce(lambda x, y: x * y, nums)
+        nums = [int(x) for x in str(newNum)]
+        sist = sist + 1
+    return sist
+
