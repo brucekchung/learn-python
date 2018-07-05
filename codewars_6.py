@@ -6,3 +6,7 @@ def count(array):
     return Counter(array)
 
 print('count: ', count(['a', 'a', 'b']))
+
+#alternate solution
+# def count(array):
+#     return {x: array.count(x) for x in array}
