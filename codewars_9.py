@@ -5,10 +5,10 @@
 import math
 
 def find_next_square(sq):
-    # Return the next square if sq is a square, -1 otherwise
+    root = sq ** 0.5  #note ** vs *
+    if root.is_integer():  #is_integer() is float method
+        return (root + 1)**2
     return -1
 
-
 print('next square: ', find_next_square(121))
-print('121: ', math.sqrt(121))
 
