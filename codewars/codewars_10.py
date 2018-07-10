@@ -6,6 +6,12 @@
 
 
 def is_anagram(test, original):
-    pass
+    return sorted(test.upper()) == sorted(original.upper())
+#note sort vs sorted
+#sort works on array/list, mutates, returns 'None'
+#sorted works on str and arr, returns copy
+#pass - allows block to run with no other indented code
 
+print('true: ', is_anagram('Creative', 'Reactive'))
+print('false: ', is_anagram('thing', 'stuff'))
 
