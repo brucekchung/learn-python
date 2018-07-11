@@ -5,6 +5,11 @@
 # solution('abcdef') # should return ['ab', 'cd', 'ef']
 
 def solution(s):
-    pass
+    return [(s + "_")[i:i + 2] for i in range(0, len(s), 2)]
 
 print('abc: ', solution('abc'))
+
+#regex solution:
+# import re
+# def solution(s):
+#     return re.findall(".{2}", s + "_")
