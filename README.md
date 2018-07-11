@@ -1,1 +1,1 @@
-### Collection of exercises from 'Learn Python the Hard Way' and Codwars ###
+### Collection of exercises from 'Learn Python the Hard Way' and Codewars ###
