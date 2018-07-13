@@ -3,6 +3,6 @@
 # So given a string "super", we should return a list of [2, 4].
 
 def vowel_indices(word):
-    pass
+    return [i for i,x in enumerate(word,1) if x.lower() in 'aeiouy']
 
 print('vowel index: ', vowel_indices('hello'))
