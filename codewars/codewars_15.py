@@ -7,7 +7,10 @@
 # f(n=100) // returns 5050
 
 def f(n):
-    pass
+    all = [1] * n
+    for i, val in enumerate(all):
+        all[i] = i + 1 
+    return sum(all)
 
 
 print('100: ', f(100))
