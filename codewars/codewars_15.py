@@ -14,3 +14,10 @@ def f(n):
 
 
 print('100: ', f(100))
+
+#alternate solution:
+
+def sumRange(n):
+    return sum(range(1, n + 1))
+
+print('alternate: ', sumRange(100))

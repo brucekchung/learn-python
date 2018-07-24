@@ -8,5 +8,3 @@ def dashatize(num):
     return num_str.strip('-').replace('--','-')
 
 print('1234: ', dashatize('1234'))
-
-
