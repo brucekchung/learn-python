@@ -5,8 +5,16 @@
 
 
 def maskify(cc):
-
-    pass
-
+    last_4 = cc[-4:]
+    total_masked = len(cc) - 4
+    masked = ''
+    for i in range(total_masked):
+        masked += '#'
+    return masked + last_4
 
 print('brucechung: ', maskify('brucechung'))
+
+#alternate solution:
+
+# def maskify(cc):
+#     return "#"*(len(cc)-4) + cc[-4:]
